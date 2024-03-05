@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/17.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.HelloController">
+   <children>
+      <AnchorPane layoutY="133.0" prefHeight="587.0" prefWidth="1280.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <TextField fx:id="Password_fieldLog" layoutX="403.0" layoutY="211.0" prefHeight="70.0" prefWidth="474.0" promptText="Пароль" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 15;">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="Login_fieldLog" layoutX="403.0" layoutY="112.0" prefHeight="70.0" prefWidth="474.0" promptText="Фамилия Имя" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 15;">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </TextField>
+            <Label layoutX="486.0" layoutY="22.0" prefHeight="64.0" prefWidth="309.0" text="Авторизация" textFill="#808080">
+               <font>
+                  <Font name="Arial" size="50.0" />
+               </font>
+            </Label>
+            <Button fx:id="authButton" layoutX="553.0" layoutY="311.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="176.0" style="-fx-background-color: #FF7F50;" text="Войти" textFill="WHITE">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Button>
+            <Button fx:id="regButton" layoutX="427.0" layoutY="422.0" mnemonicParsing="false" prefHeight="84.0" prefWidth="427.0" style="-fx-background-color: #fafafa;" text="Зарегистрироваться" textFill="#0b555b">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="145.0" layoutY="37.0" text="Исследование RC-фильтра низких частот" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="56.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER" spacing="20.0">
+          <padding>
+              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+          </padding>
+      
+          <Label fx:id="welcomeText" />
+      </VBox>
+   </children>
+</AnchorPane>
